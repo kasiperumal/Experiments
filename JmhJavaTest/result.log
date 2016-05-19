@@ -1,0 +1,175 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JMH benchmark sample: Java 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ JmhJavaTest ---
+[INFO] Deleting /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ JmhJavaTest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ JmhJavaTest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ JmhJavaTest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ JmhJavaTest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ JmhJavaTest ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ JmhJavaTest ---
+[INFO] Building jar: /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/target/JmhJavaTest-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.2:shade (default) @ JmhJavaTest ---
+[INFO] Including org.openjdk.jmh:jmh-core:jar:1.12 in the shaded jar.
+[INFO] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[INFO] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[INFO] Replacing /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/target/benchmarks.jar with /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/target/JmhJavaTest-0.0.1-SNAPSHOT-shaded.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.1:install (default-install) @ JmhJavaTest ---
+[INFO] Installing /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/target/JmhJavaTest-0.0.1-SNAPSHOT.jar to /Users/Kaspean/.m2/repository/com/kasi/JmhJavaTest/0.0.1-SNAPSHOT/JmhJavaTest-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/Kaspean/Documents/Programming/Projects/JmhJavaTest/pom.xml to /Users/Kaspean/.m2/repository/com/kasi/JmhJavaTest/0.0.1-SNAPSHOT/JmhJavaTest-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- exec-maven-plugin:1.4.0:exec (default-cli) @ JmhJavaTest ---
+# JMH 1.12 (released 32 days ago)
+# VM version: JDK 1.8.0_66, VM 25.66-b17
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/bin/java
+# VM options: -server
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.kasi.JmhJavaTest.JMHSortBenchmark.arraysSort
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 28973643.809 ops/s
+# Warmup Iteration   2: 30305165.249 ops/s
+# Warmup Iteration   3: 29891923.209 ops/s
+# Warmup Iteration   4: 30138370.040 ops/s
+# Warmup Iteration   5: 29803955.958 ops/s
+# Warmup Iteration   6: 30313300.756 ops/s
+# Warmup Iteration   7: 29853328.509 ops/s
+# Warmup Iteration   8: 30218751.175 ops/s
+# Warmup Iteration   9: 30631934.399 ops/s
+# Warmup Iteration  10: 30136822.891 ops/s
+# Warmup Iteration  11: 30135576.766 ops/s
+# Warmup Iteration  12: 29977485.246 ops/s
+# Warmup Iteration  13: 30227539.412 ops/s
+# Warmup Iteration  14: 30003717.597 ops/s
+# Warmup Iteration  15: 30473853.095 ops/s
+# Warmup Iteration  16: 30187168.840 ops/s
+# Warmup Iteration  17: 30000257.662 ops/s
+# Warmup Iteration  18: 30456136.476 ops/s
+# Warmup Iteration  19: 30390312.744 ops/s
+# Warmup Iteration  20: 29944147.933 ops/s
+Iteration   1: 30538840.046 ops/s
+Iteration   2: 29973757.047 ops/s
+Iteration   3: 30321431.711 ops/s
+Iteration   4: 30194643.064 ops/s
+Iteration   5: 30462163.563 ops/s
+Iteration   6: 30077197.691 ops/s
+Iteration   7: 29960030.065 ops/s
+Iteration   8: 29763962.327 ops/s
+Iteration   9: 30251406.560 ops/s
+Iteration  10: 30388793.818 ops/s
+Iteration  11: 30153991.120 ops/s
+Iteration  12: 30011207.636 ops/s
+Iteration  13: 30151314.344 ops/s
+Iteration  14: 29073882.205 ops/s
+Iteration  15: 29939845.512 ops/s
+Iteration  16: 30148677.936 ops/s
+Iteration  17: 30163336.860 ops/s
+Iteration  18: 30328374.675 ops/s
+Iteration  19: 29993483.588 ops/s
+Iteration  20: 29577031.029 ops/s
+
+
+Result "arraysSort":
+  30073668.540 ±(99.9%) 285825.227 ops/s [Average]
+  (min, avg, max) = (29073882.205, 30073668.540, 30538840.046), stdev = 329156.756
+  CI (99.9%): [29787843.313, 30359493.767] (assumes normal distribution)
+
+
+# JMH 1.12 (released 32 days ago)
+# VM version: JDK 1.8.0_66, VM 25.66-b17
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/bin/java
+# VM options: -server
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.kasi.JmhJavaTest.JMHSortBenchmark.collectionsSort
+
+# Run progress: 50.00% complete, ETA 00:00:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 11342014.375 ops/s
+# Warmup Iteration   2: 7394088.046 ops/s
+# Warmup Iteration   3: 7136969.108 ops/s
+# Warmup Iteration   4: 7081632.296 ops/s
+# Warmup Iteration   5: 7174958.573 ops/s
+# Warmup Iteration   6: 7136512.133 ops/s
+# Warmup Iteration   7: 7130875.219 ops/s
+# Warmup Iteration   8: 7133057.340 ops/s
+# Warmup Iteration   9: 7247164.477 ops/s
+# Warmup Iteration  10: 7178498.861 ops/s
+# Warmup Iteration  11: 7082852.229 ops/s
+# Warmup Iteration  12: 6897108.771 ops/s
+# Warmup Iteration  13: 6866240.500 ops/s
+# Warmup Iteration  14: 7044309.290 ops/s
+# Warmup Iteration  15: 7095102.008 ops/s
+# Warmup Iteration  16: 7481958.248 ops/s
+# Warmup Iteration  17: 7030644.599 ops/s
+# Warmup Iteration  18: 5762295.219 ops/s
+# Warmup Iteration  19: 6835958.978 ops/s
+# Warmup Iteration  20: 6389711.647 ops/s
+Iteration   1: 6483114.086 ops/s
+Iteration   2: 7074278.112 ops/s
+Iteration   3: 6841020.638 ops/s
+Iteration   4: 6990576.397 ops/s
+Iteration   5: 6893862.717 ops/s
+Iteration   6: 6888876.757 ops/s
+Iteration   7: 6786714.264 ops/s
+Iteration   8: 6492614.618 ops/s
+Iteration   9: 7016321.131 ops/s
+Iteration  10: 6414187.407 ops/s
+Iteration  11: 4333739.557 ops/s
+Iteration  12: 5488306.274 ops/s
+Iteration  13: 5792509.328 ops/s
+Iteration  14: 7233182.331 ops/s
+Iteration  15: 6504465.454 ops/s
+Iteration  16: 4831908.006 ops/s
+Iteration  17: 7180431.058 ops/s
+Iteration  18: 6167702.538 ops/s
+Iteration  19: 6528128.489 ops/s
+Iteration  20: 6997837.303 ops/s
+
+
+Result "collectionsSort":
+  6446988.823 ±(99.9%) 680028.052 ops/s [Average]
+  (min, avg, max) = (4333739.557, 6446988.823, 7233182.331), stdev = 783121.316
+  CI (99.9%): [5766960.772, 7127016.875] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:39
+
+Benchmark                                      Mode  Cnt         Score        Error  Units
+JmhJavaTest.JMHSortBenchmark.arraysSort       thrpt   20  30073668.540 ± 285825.227  ops/s
+JmhJavaTest.JMHSortBenchmark.collectionsSort  thrpt   20   6446988.823 ± 680028.052  ops/s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:45 min
+[INFO] Finished at: 2016-05-03T19:26:18+05:30
+[INFO] Final Memory: 26M/212M
+[INFO] ------------------------------------------------------------------------
